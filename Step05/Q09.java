@@ -4,25 +4,25 @@ import java.util.Scanner;
 
 public class Q09 {
 
-	private String Reverse1(String value) {
-		int start = 0;
-		int end = value.length() - 1;
-
-		char[] arr = value.toCharArray();
-
-		while (start < end) {
-			char temp = arr[start];
-			arr[start] = arr[end];
-			arr[end] = temp;
-
-			start++;
-			end--;
-		}
-
-		String result = new String(arr);
-
-		return result;
-	}
+//	private String Reverse1(String value) {
+//		int start = 0;
+//		int end = value.length() - 1;
+//
+//		char[] arr = value.toCharArray();
+//
+//		while (start < end) {
+//			char temp = arr[start];
+//			arr[start] = arr[end];
+//			arr[end] = temp;
+//
+//			start++;
+//			end--;
+//		}
+//
+//		String result = new String(arr);
+//
+//		return result;
+//	}
 
 	private String Reverse2(String value) {
 		StringBuilder sb = new StringBuilder(value);
@@ -38,7 +38,7 @@ public class Q09 {
 		int[] i_CONST = new int[s_CONST.length];
 
 		for (int i = 0; i < s_CONST.length; i++) {
-			//s_CONST[i] = Reverse1(s_CONST[i]);
+			// s_CONST[i] = Reverse1(s_CONST[i]);
 			s_CONST[i] = Reverse2(s_CONST[i]);
 
 			i_CONST[i] = Integer.parseInt(s_CONST[i]);
